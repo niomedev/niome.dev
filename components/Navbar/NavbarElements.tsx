@@ -1,8 +1,12 @@
 import styled from 'styled-components';
 
-export const Nav = styled.nav`
+type NavProps = {
+    scrollNav: boolean;
+}
+
+export const Nav = styled.nav<NavProps>`
     align-items: center;
-    background: ${({scrollNav}:{scrollNav:any}) => (scrollNav ? '#000' : 'transparent')};
+    background: ${({scrollNav}) => (scrollNav ? '#000' : 'transparent')};
     display: flex;    
     font-size: 1rem;
     height: 80px;

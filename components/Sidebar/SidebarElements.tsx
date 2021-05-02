@@ -1,15 +1,19 @@
 import styled from 'styled-components';
 import { FaTimes } from 'react-icons/fa';
 
-export const SidebarContainer = styled.aside`
+type SidebarContainerProps = {
+    isOpen: boolean;
+}
+
+export const SidebarContainer = styled.aside<SidebarContainerProps>`
     align-items: center;
     background: #0d0d0d;   
     display: grid;
     height: 100%;
     left: 0;
-    opacity: ${({ isOpen } : { isOpen:any }) => (isOpen ? '100%' : '0')};
+    opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
     position: fixed;
-    top: ${({ isOpen } : { isOpen:any }) => (isOpen ? '0' : '-100%')};
+    top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
     top: 0;
     transition: 0.3s ease-in-out;
     width: 100%;
