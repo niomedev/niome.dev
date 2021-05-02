@@ -17,7 +17,7 @@ const Sidebar = ( {isOpen, toggle} : {isOpen:any, toggle:any} ) => {
                         <SidebarLink>Rie Commands</SidebarLink>
                     </Link>
                     <Link href="#manga" passHref>
-                        <SidebarLink>Rie's Manga</SidebarLink>
+                        <SidebarLink>Rie&apos;s Manga</SidebarLink>
                     </Link>
                     <Link href="#services" passHref>
                         <SidebarLink>Services</SidebarLink>
