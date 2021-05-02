@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import { Text } from '../../../components/Manga/Manga'
+import { ImageContainer,Text } from '../../../components/Manga/Manga'
 
 const index = () => {
     return (
@@ -12,7 +12,9 @@ const index = () => {
         <Text>
             14/14
         </Text>
+            <ImageContainer>
             <img src='/Manga/Ch1/14.png'/>
+            </ImageContainer>
         </>
     )
 }
