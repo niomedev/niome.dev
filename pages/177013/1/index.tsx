@@ -15,7 +15,6 @@ const index = () => {
         </Text>
         <ImageContainer>
             <Link href='/177013/2.html' passHref>
-                <div></div>
                 <img src='/Manga/Ch1/1.png'/>
             </Link>
             </ImageContainer>
