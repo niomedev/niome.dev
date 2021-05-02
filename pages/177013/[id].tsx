@@ -5,7 +5,7 @@ import { ImageContainer, Text } from '../../components/Manga/Manga'
 import DefaultErrorPage from 'next/error'
 import Head from 'next/head'
 
-export default function Manga() {
+export default function Manga({ manga }:{manga:any}) {
 
     function addOne(num:number) {
         return ++num;
@@ -52,8 +52,8 @@ export async function getStaticPaths() {
     const posts = await res.json()
   
     // Get the paths we want to pre-render based on posts
-    const paths = posts.map((post:any) => ({
-      params: { id: post.id },
+    const paths = posts.map((manga:any) => ({
+      params: { id: manga.id },
     }))
   
     // We'll pre-render only these paths at build time.
