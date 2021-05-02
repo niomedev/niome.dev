@@ -46,17 +46,17 @@ export default function Manga() {
     }else return <DefaultErrorPage statusCode={404}/>
 }
 
-    export async function getStaticProps(context: any){
-        const { params } = context;
-        const { id } = params;
-        return { props: { id: id } }
-    }
+export async function getStaticProps(context: any) {
+    const { params } = context
+    const { id } = params
+    return { props: { id: id } }
+}
 
-    export async function getStaticPaths(){
-        return {
-            paths: Array.from(Array(14).keys()).map(num => ({
-                param: {id: num.toString()}
-            })),
-            fallback: false
-        }
+export async function getStaticPaths() {
+    return {
+        paths: Array.from(Array(14).keys()).map(num => ({
+            params: { id: num.toString() }
+        })),
+        fallback: false
     }
+}
