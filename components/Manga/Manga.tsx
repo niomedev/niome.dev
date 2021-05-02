@@ -6,6 +6,6 @@ export const ImageContainer = styled.image`
     text-align: center;
 `
 export const Text = styled.div`
-    color: white;
+    color: Black;
     font-size:48px;
 `

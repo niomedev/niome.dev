@@ -35,6 +35,10 @@ export const TabsDiv = styled.div`
     max-width: 1200px;
     padding: 20px;
     width: 1200px;
+
+    @media screen and (max-width: 768px) {
+        width: 700px;
+    }
 `
 export const BtnWrapper = styled.div`
     align-items: center;
@@ -88,6 +92,10 @@ export const TabDiv = styled.div`
     max-width: 1100px;
     text-align: center;
     width: 1100px;
+
+    @media screen and (max-width: 768px) {
+        width: 600px;
+    }
 `
 
 export const TabName = styled.div`
