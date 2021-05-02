@@ -5,7 +5,7 @@ import { ImageContainer, Text } from '../../components/Manga/Manga'
 import DefaultErrorPage from 'next/error'
 import Head from 'next/head'
 
-export default function Manga({ manga }:{manga:any}) {
+export default function Manga() {
 
     function addOne(num:number) {
         return ++num;
@@ -46,28 +46,17 @@ export default function Manga({ manga }:{manga:any}) {
     }else return <DefaultErrorPage statusCode={404}/>
 }
 
-export async function getStaticPaths() {
-    // Call an external API endpoint to get posts
-    const res = await fetch('https://niome.dev/177013')
-    const posts = await res.json()
-  
-    // Get the paths we want to pre-render based on posts
-    const paths = posts.map((manga:any) => ({
-      params: { id: manga.id },
-    }))
-  
-    // We'll pre-render only these paths at build time.
-    // { fallback: false } means other routes should 404.
-    return { paths, fallback: false }
-  }
-  
-  // This also gets called at build time
-  export async function getStaticProps({ params }:{ params:any }) {
-    // params contains the post `id`.
-    // If the route is like /posts/1, then params.id is 1
-    const res = await fetch(`https://niome.dev/177013/${params.id}`)
-    const post = await res.json()
-  
-    // Pass post data to the page via props
-    return { props: { post } }
-  }
+    export async function getStaticProps(context: any){
+        const { params } = context;
+        const { id } = params;
+        return { props: { id: id } }
+    }
+
+    export async function getStaticPaths(){
+        return {
+            paths: Array.from(Array(14).keys()).map(num => ({
+                param: {id: num.toString()}
+            })),
+            fallback: false
+        }
+    }
