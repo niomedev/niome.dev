@@ -37,7 +37,7 @@ export default function Manga() {
                     <Text>
                         {id}/14
                     </Text>
-                    <Link href={newUrl} passHref>
+                    <Link href={newUrl} as={newUrl} prefetch passHref>
                         <img src={imgUrl}/>
                     </Link>
                 </ImageContainer>
