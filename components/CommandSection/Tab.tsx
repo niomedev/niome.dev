@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { FC, ReactNode } from 'react'
 
 type Props = {
   title: string,
-  children: any,
+  children: ReactNode,
 }
 
-const Tab: React.FC<Props> = ({ children }: Props) => {
+const Tab: FC<Props> = ({ children }: Props) => {
   return <>{children}</>
 }
 

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FC } from 'react'
 import {
     InfoContainer,
     InfoWrapper,
@@ -16,39 +16,56 @@ import {
     BtnLink,
 } from './InfoElements'
 
-const InfoSection = ({lightBg, id, imgStart, lightText, darkText, topline, headline, description, img, alt, btnEnable, btnLabel, btnUrl} : {lightBg:any, id:any, imgStart:any, lightText:any, darkText:any, topline:any, headline:any, description:any, img:any, alt:any, btnEnable:any, btnLabel:any, btnUrl:any}) => {
+export type HomeObject = {
+    id: string;
+    lightBg: boolean;
+    lightText: boolean;
+    lightTextDesc: boolean;
+    topline: string;
+    headline: string;
+    description: string;
+    btnEnable: boolean;
+    btnLabel: string;
+    btnUrl: string;
+    imgStart: boolean;
+    img: string;
+    dark: boolean;
+    alt: string;
+    primary: boolean;
+    darkText: boolean;
+}
+
+const InfoSection: FC<HomeObject> = ({id, lightBg, lightText, imgStart, darkText, topline, headline, description, img, alt, btnEnable, btnLabel, btnUrl}) => {
     return (
-        <>
-            <InfoContainer lightBg={lightBg} id={id}>
-                <InfoWrapper>
-                    <InfoRow imgStart={imgStart}>
-                        <Column1>
-                            <TextWrapper>
-                                <TopLine>
-                                    {topline}
-                                </TopLine>
-                                <Heading lightText={lightText}>
-                                    {headline}
-                                </Heading>
-                                <Subtitle darkText={darkText}>
-                                    {description}
-                                </Subtitle>
-                                <BtnWrap btnEnable={btnEnable}>
-                                    <BtnLink target="_blank" href={btnUrl}>
-                                        <Button>{btnLabel}</Button>
-                                    </BtnLink>
-                                </BtnWrap>
-                            </TextWrapper>
-                        </Column1>
-                        <Column2>
-                            <ImgWrap>
-                                <Img src={img} alt={alt}/>
-                            </ImgWrap>
-                        </Column2>
-                    </InfoRow>
-                </InfoWrapper>
-            </InfoContainer>
-        </>
+        <InfoContainer lightBg={lightBg} id={id}>
+            <InfoWrapper>
+                <InfoRow imgStart={imgStart}>
+                    <Column1>
+                        <TextWrapper>
+                            <TopLine>
+                                {topline}
+                            </TopLine>
+                            <Heading lightText={lightText}>
+                                {headline}
+                            </Heading>
+                            <Subtitle darkText={darkText}>
+                                {description}
+                            </Subtitle>
+                            <BtnWrap btnEnable={btnEnable}>
+                                <BtnLink target="_blank" href={btnUrl}>
+                                    <Button>{btnLabel}</Button>
+                                </BtnLink>
+                            </BtnWrap>
+                        </TextWrapper>
+                    </Column1>
+                    <Column2>
+                        <ImgWrap>
+                            <Img src={img} alt={alt}/>
+                        </ImgWrap>
+                    </Column2>
+                </InfoRow>
+            </InfoWrapper>
+        </InfoContainer>
     )
 }
 

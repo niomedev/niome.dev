@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { ImageContainer, Text } from '../../components/Manga/Manga'
 import DefaultErrorPage from 'next/error'
 import Head from 'next/head'
+import { GetStaticPaths, GetStaticProps } from 'next';
 
 export default function Manga() {
 
@@ -46,15 +47,14 @@ export default function Manga() {
     }else return <DefaultErrorPage statusCode={404}/>
 }
 
-export async function getStaticProps(context: any) {
-    const { params } = context
-    const { id } = params
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+    const id = params?.id
     return { props: { id: id } }
 }
 
-export async function getStaticPaths() {
+export const getStaticPaths: GetStaticPaths = async () => {
     return {
-        paths: Array.from(Array(15).keys()).map(num => ({
+        paths: Array.from(Array(14).keys()).map(num => ({
             params: { id: num.toString() }
         })),
         fallback: false

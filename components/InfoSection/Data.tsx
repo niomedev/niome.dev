@@ -1,4 +1,6 @@
-export const homeObjOne = {
+import { HomeObject } from "."
+
+export const homeObjOne: HomeObject = {
     id: 'about',
     lightBg: false,
     lightText: true,
@@ -17,7 +19,7 @@ export const homeObjOne = {
     darkText: false,
 }
 
-export const homeObjTwo = {
+export const homeObjTwo: HomeObject = {
     id: 'manga',
     lightBg: false,
     lightText: true,

@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 
-export const InfoContainer = styled.div`
-    background: ${({ lightBg } : { lightBg:any }) => (lightBg ? '#f9f9f9' : '#010606')};
+type InfoContainerProps = {
+    lightBg: boolean;
+}
+
+export const InfoContainer = styled.div<InfoContainerProps>`
+    background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#010606')};
     color: #fff;
     
     @media screen and (max-width: 768px) {
@@ -21,14 +25,18 @@ export const InfoWrapper = styled.div`
     z-index: 1;
 `
 
-export const InfoRow = styled.div`
+type InfoRowProps = {
+    imgStart: boolean;
+}
+
+export const InfoRow = styled.div<InfoRowProps>`
     align-items: center;
     display: grid;
     grid-auto-columns: minmax(auto, 1fr);
-    grid-template-areas: ${({ imgStart } : { imgStart:any }) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
+    grid-template-areas: ${({ imgStart }) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
 
     @media screen and (max-width: 768px){
-        grid-template-areas: ${({ imgStart } : { imgStart:any }) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
+        grid-template-areas: ${({ imgStart }) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
     }
 `
 
@@ -60,8 +68,12 @@ export const TopLine = styled.p`
     text-transform: uppercase;
 `
 
-export const Heading = styled.h1`
-    color: ${({ lightText } : { lightText:any }) => (lightText ? '#f7f8fa' : '#010606')};
+type HeadingProps = {
+    lightText: boolean;
+}
+
+export const Heading = styled.h1<HeadingProps>`
+    color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')};
     font-size: 48px;
     font-weight: 600;
     line-height: 1.1;
@@ -72,8 +84,12 @@ export const Heading = styled.h1`
     }
 `
 
-export const Subtitle = styled.p`
-    color: ${({ darkText } : { darkText:any }) => (darkText ? '#010606' : '#fff')};
+type SubtitleProps = {
+    darkText: boolean;
+}
+
+export const Subtitle = styled.p<SubtitleProps>`
+    color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 35px;
@@ -90,8 +106,12 @@ export const Img = styled.img`
     width: 100%;  
 `
 
-export const BtnWrap = styled.div`
-    display: ${({ btnEnable }:{ btnEnable:any }) => (btnEnable ? 'flex' : 'none')};
+type BtnWrapProps = {
+    btnEnable: boolean;
+}
+
+export const BtnWrap = styled.div<BtnWrapProps>`
+    display: ${({ btnEnable }) => (btnEnable ? 'flex' : 'none')};
     justify-content: flex-start;    
 `
 

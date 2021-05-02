@@ -1,9 +1,13 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, FC} from 'react';
 import { FaBars } from 'react-icons/fa'
 import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavLinks, NavItem} from './NavbarElements'
 import Link from 'next/link'
 
-const Navbar = ({ toggle } : { toggle:any }) => {
+type NavbarProps = {
+    toggle: () => void;
+}
+
+const Navbar: FC<NavbarProps> = ({ toggle }) => {
     const [scrollNav, setScrollNav] = useState(false);
 
     const changeNav = () => {
