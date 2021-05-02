@@ -54,7 +54,7 @@ export async function getStaticProps(context: any) {
 
 export async function getStaticPaths() {
     return {
-        paths: Array.from(Array(14).keys()).map(num => ({
+        paths: Array.from(Array(15).keys()).map(num => ({
             params: { id: num.toString() }
         })),
         fallback: false
