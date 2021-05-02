@@ -22,4 +22,4 @@ const two = () => {
     )
 }
 
-export default one
+export default two
