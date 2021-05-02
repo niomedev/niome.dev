@@ -27,7 +27,7 @@ export const homeObjTwo = {
     description: 'Interested in Rie\'s backstory?\nIf so, make sure to check out the Manga!\nMade by Lax find him at @LaxyLaxx on twitter!',
     btnEnable: true,
     btnLabel: 'Read first chapter!',
-    btnUrl: '/177013/1.html',
+    btnUrl: '/177013/1',
     imgStart: true,
     img: '/Assets/Rie-invert.png',
     dark: true,
