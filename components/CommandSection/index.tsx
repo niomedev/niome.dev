@@ -33,7 +33,7 @@ const CommandSection = () => {
                             </Heading>
                             <Subtitle darkText={false}>
                                 A Multi-purpose discord bot created by me for Island of Eternity, ranging features from Back-end server usage to Fun commands.
-                                Check out the commands below, and don't forget to pay Rie a visit!
+                                Check out the commands below, and don&apos;t forget to pay Rie a visit!
                             </Subtitle>
                             <BtnWrap btnEnable={true}>
                                 <BtnLink target="_blank" href='www.discord.gg/eternity'>
@@ -58,7 +58,7 @@ const CommandSection = () => {
                                 n/a
                             </TabAlias>
                             <TabDesc>
-                                Display's current guild's Prefix.
+                                Display&apos;s current guild&apos;s Prefix.
                             </TabDesc>
                             <TabUsage>
                                 n/a
@@ -90,7 +90,7 @@ const CommandSection = () => {
                                 n/a
                             </TabAlias>
                             <TabDesc>
-                                Places a Santa hat on user's Avatar.
+                                Places a Santa hat on user&apos;s Avatar.
                             </TabDesc>
                             <TabUsage>
                                 &lt;user&gt; (optional)
@@ -150,7 +150,7 @@ const CommandSection = () => {
                                 n/a
                             </TabAlias>
                             <TabDesc>
-                                Show's minecraft profile of tagged user or self, if whitelisted.
+                                Show&apos;s minecraft profile of tagged user or self, if whitelisted.
                             </TabDesc>
                             <TabUsage>
                                 &lt;user&gt; (optional)
@@ -270,7 +270,7 @@ const CommandSection = () => {
                                 n/a
                             </TabAlias>
                             <TabDesc>
-                                Return's tagged user's or self's avatar.
+                                Return&apos;s tagged user&apos;s or self&apos;s avatar.
                             </TabDesc>
                             <TabUsage>
                                 &lt;user&gt; (optional)
