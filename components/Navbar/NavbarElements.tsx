@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 
 export const Nav = styled.nav`
-    background: ${({scrollNav}:{scrollNav:any}) => (scrollNav ? '#000' : 'transparent')};
-    height: 80px;
-    margin-top: -80px;    
-    display: flex;
-    justify-content: center;
     align-items: center;
+    background: ${({scrollNav}:{scrollNav:any}) => (scrollNav ? '#000' : 'transparent')};
+    display: flex;    
     font-size: 1rem;
+    height: 80px;
+    justify-content: center;
+    margin-top: -80px;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -19,23 +19,23 @@ export const Nav = styled.nav`
 
 export const NavbarContainer = styled.div`
     display: flex;
-    justify-content: space-between;
     height: 80px;
-    z-index: 1;
-    width: 100%;
+    justify-content: space-between;
+    max-width: 1100px;
     padding: 0 24px;
-    max-width: 1100px;    
+    width: 100%;
+    z-index: 1;    
 `
 
 export const NavLogo = styled.a`
-    color: #fff;
-    justify-self: flex-start;
-    cursor: pointer;
-    font-size:  1.5rem;
-    display: flex;
     align-items: center;
-    margin-left: 24px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-size:  1.5rem;
     font-weight: bold;
+    justify-self: flex-start;
+    margin-left: 24px;
     text-decoration: none;
 `
 
@@ -54,11 +54,11 @@ export const MobileIcon = styled.div`
 `
 
 export const NavMenu = styled.ul`
-    display: flex;
     align-items: center;
+    display: flex;
     list-style: none;
-    text-align: center;
     margin-right: -22px;
+    text-align: center;
     
     @media screen and (max-width: 760px){
         display: none;
@@ -70,13 +70,13 @@ export const NavItem = styled.li`
 `
 
 export const NavLinks = styled.a`
-    color: white;
-    display: flex;
     align-items: center;
-    text-decoration: none;
-    padding: 0 1rem;
-    height: 100%;
+    color: white;
     cursor: pointer;
+    display: flex;
+    height: 100%;
+    padding: 0 1rem;
+    text-decoration: none;
 
     &.active {
         border-bottom: 3px solid #FF69B4;

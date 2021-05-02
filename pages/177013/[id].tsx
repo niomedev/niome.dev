@@ -12,7 +12,7 @@ export default function Manga() {
 
     const router = useRouter()
     const { id } = router.query;
-    let convId = id as unknown as number;
+    const convId = id as unknown as number;
 
     const newNum = addOne(convId);
     let newUrl;

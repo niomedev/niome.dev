@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 export const ImageContainer = styled.image`
+    background: #000;
     display: block;
     text-align: center;
-    background: #000;
 `
 export const Text = styled.div`
-    font-size:48px;
     color: white;
+    font-size:48px;
 `

@@ -5,14 +5,14 @@ export const FooterContainer = styled.footer`
 `
 
 export const FooterWrap = styled.div`
-    padding: 48px 24px;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 1100px;
     height: 25px;
+    justify-content: center;
     margin: 0 auto;
+    max-width: 1100px;
+    padding: 48px 24px;
 `
 
 export const SocialMedia = styled.section`
@@ -21,17 +21,17 @@ export const SocialMedia = styled.section`
 `
 
 export const SocialMediaWrap = styled.div`
-    flex-direction: column;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     max-width: 1100px;
 `
 
 export const SocialIcons = styled.div`
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     width: 240px;
 `
 

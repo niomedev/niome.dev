@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const CommandContainer = styled.div`
-    color: #fff;
     background: #010606;
+    color: #fff;
     
     @media screen and (max-width: 768px) {
         padding: 100px 0;
@@ -10,54 +10,54 @@ export const CommandContainer = styled.div`
 `
 
 export const CommandWrapper = styled.div`
-    display: grid;
     align-items: center;
-    z-index: 1;
+    display: grid;
+    height: 980px;
     /* 860 */
-    height: 980px; 
-    width: 100%;
-    max-width: 1600px;
-    margin-right: auto;
+    justify-content: center; 
     margin-left: auto;
+    margin-right: auto;
+    max-width: 1600px;
     padding: 0 24px;
-    justify-content: center;
+    width: 100%;
+    z-index: 1;
 `
 
 export const TabsDiv = styled.div`
-    display: table;
     align-items: center;
-    justify-content: center;
-    border-radius: 25px;
     background: #202020;
+    border-radius: 25px;
+    display: table;
+    justify-content: center;
     margin: 0;
     margin-top: 40px;
+    max-height: 800px;
+    max-width: 1200px;
     padding: 20px;
     width: 1200px;
-    max-width: 1200px;
-    max-height: 800px;
 `
 export const BtnWrapper = styled.div`
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center;
     margin: 0 auto;
-    width: 1100px;
-    max-width: 1100px;
     margin-bottom: 10px;
     max-height: 400px;
+    max-width: 1100px;
+    width: 1100px;
 `
 export const Button = styled.button`
-    border-radius: 20px;
     background-color: #BA55D3;
     border: none;
+    border-radius: 20px;
     color: #FFFFFF;
-    text-align: center;
-    font-size: 22px;
-    padding: 10px;
-    max-width: 800px;
-    transition: all 0.5s;
     cursor: pointer;
+    font-size: 22px;
     margin: 5px;
+    max-width: 800px;
+    padding: 10px;
+    text-align: center;
+    transition: all 0.5s;
 
     &:hover{
         background-color: #481355;
@@ -69,25 +69,25 @@ export const Button = styled.button`
 `
 
 export const Ul = styled.ul`
-    padding: 0px;
-    margin: 0 auto;
     list-style: none;
+    margin: 0 auto;
+    padding: 0px;
 `
 
 export const TabDiv = styled.div`
-    margin-bottom: 10px;
-    margin: 0 auto;
-    text-align: center;
     align-items: center;
-    justify-content: center;
-    display: flex;
-    border-radius: 25px;
     background: #282828;
-    width: 1100px;
-    max-width: 1100px;
+    border-radius: 25px;
+    display: flex;
     font-size: 20px;
     height: 50px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
     max-height: 800px;
+    max-width: 1100px;
+    text-align: center;
+    width: 1100px;
 `
 
 export const TabName = styled.div`
