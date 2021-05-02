@@ -48,7 +48,7 @@ export default function Manga() {
 
 export async function getStaticPaths() {
     // Call an external API endpoint to get posts
-    const res = await fetch('/177013')
+    const res = await fetch('niome.dev/177013')
     const posts = await res.json()
   
     // Get the paths we want to pre-render based on posts
@@ -65,7 +65,7 @@ export async function getStaticPaths() {
   export async function getStaticProps({ params }:{ params:any }) {
     // params contains the post `id`.
     // If the route is like /posts/1, then params.id is 1
-    const res = await fetch(`/177013/${params.id}`)
+    const res = await fetch(`https://niome.dev/177013/${params.id}`)
     const post = await res.json()
   
     // Pass post data to the page via props
