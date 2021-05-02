@@ -2,10 +2,10 @@ import React from 'react'
 
 type Props = {
   title: string,
-  children: any
+  children: any,
 }
 
-const Tab: React.FC<Props> = ({ children }) => {
+const Tab: React.FC<Props> = ({ children }: Props) => {
   return <>{children}</>
 }
 
