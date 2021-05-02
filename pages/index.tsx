@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import HeroSection from '../components/HeroSection';
 import Navbar from '../components/Navbar'
-import Sidebar from '../components/Sidebar'
+// import Sidebar from '../components/Sidebar'
 import InfoSection from '../components/InfoSection'
 import { homeObjOne, homeObjTwo } from '../components/InfoSection/Data';
 import Services from '../components/Services';
