@@ -7,7 +7,7 @@ type Props = {
   setSelectedTab: (index: number) => void
 }
 
-const TabTitle: React.FC<Props> = ({ title, setSelectedTab, index }) => {
+const TabTitle: React.FC<Props> = ({ title, setSelectedTab, index }: Props) => {
 
   const onClick = useCallback(() => {
     setSelectedTab(index)

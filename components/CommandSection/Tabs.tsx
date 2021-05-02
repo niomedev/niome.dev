@@ -6,7 +6,7 @@ type Props = {
   children: ReactElement[]
 }
 
-const Tabs: React.FC<Props> = ({ children }) => {
+const Tabs: React.FC<Props> = ({ children }: Props) => {
   const [selectedTab, setSelectedTab] = useState(0)
 
   return (

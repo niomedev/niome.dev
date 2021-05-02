@@ -41,7 +41,7 @@ const Navbar = ({ toggle } : { toggle:any }) => {
                         </NavItem>
                         <NavItem>
                             <Link href="#manga" passHref>
-                                <NavLinks>Rie's Manga</NavLinks>
+                                <NavLinks>Rie&apos;s Manga</NavLinks>
                             </Link>
                         </NavItem>
                         <NavItem>

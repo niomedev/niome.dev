@@ -30,7 +30,7 @@ export default function Manga() {
         return(
             <>
                 <Head>
-                    <title>Rie's Manga</title>
+                    <title>Rie&apos;s Manga</title>
                     <link rel="icon" href="/Assets/Rie.png" />
                 </Head>
                 <ImageContainer>
