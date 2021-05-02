@@ -31,7 +31,20 @@ export default class MyDocument extends Document {
   render() {
     return (
         <Html lang="en">
-          <Head />
+          <Head>
+              <meta name="title" content="Niome"/>
+              <meta name="description" content="Junior level Developer & Animator.
+              Nodejs, Python, & Typescript as a Developer.
+              After Effects, Photoshop, & Live2D as an Animator."/>
+
+              <meta property="og:type" content="website"/>
+              <meta property="og:url" content="https://niome.dev/"/>
+              <meta property="og:title" content="Niome"/>
+              <meta property="og:description" content="Junior level Developer & Animator.
+              Nodejs, Python, & Typescript as a Developer.
+              After Effects, Photoshop, & Live2D as an Animator."/>
+              <meta property="og:image" content="https://niome.dev/Assets/Rie-base.png"/>
+          </Head>
           <body>
             <Main />
             <NextScript />

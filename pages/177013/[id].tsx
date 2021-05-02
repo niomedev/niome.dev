@@ -2,7 +2,6 @@ import React from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link'
 import { ImageContainer, Text } from '../../components/Manga/Manga'
-import DefaultErrorPage from 'next/error'
 import Head from 'next/head'
 
 export default function Manga() {
@@ -43,5 +42,5 @@ export default function Manga() {
                 </ImageContainer>
             </>
         )
-    }else return <DefaultErrorPage statusCode={404}/>
+    }
 }

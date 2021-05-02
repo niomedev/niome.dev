@@ -36,7 +36,7 @@ const CommandSection = () => {
                                 Check out the commands below, and don&apos;t forget to pay Rie a visit!
                             </Subtitle>
                             <BtnWrap btnEnable={true}>
-                                <BtnLink target="_blank" href='www.discord.gg/eternity'>
+                                <BtnLink target="_blank" href='//www.discord.gg/eternity'>
                                     <Button>Visit Rie!</Button>
                                 </BtnLink>
                             </BtnWrap>
