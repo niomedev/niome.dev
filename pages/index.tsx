@@ -22,7 +22,7 @@ const Index = () => {
         <title>Niome</title>
         <link rel="icon" href="/Favicon.png" />
       </Head>
-      <Sidebar isOpen={isOpen} toggle={toggle} />
+      {/* <Sidebar isOpen={isOpen} toggle={toggle} /> */}
       <Navbar toggle={toggle} />
       <HeroSection />
       <InfoSection {...homeObjOne}/>
