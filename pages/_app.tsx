@@ -12,9 +12,11 @@ const GlobalReset = createGlobalStyle`
     body {
       margin: 0;
       font-family: 'Chlakh Regular';
+      overflow-x: hidden;
     }
     ::-webkit-scrollbar {
       display: none;
+      overflow-x: hidden;
     }
     div{
       white-space: pre-wrap;

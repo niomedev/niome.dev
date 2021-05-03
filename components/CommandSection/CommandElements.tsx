@@ -35,9 +35,9 @@ export const TabsDiv = styled.div`
     max-width: 1200px;
     padding: 20px;
 
-    /* @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px) {
         display: none;
-    } */
+    }
 `
 export const BtnWrapper = styled.div`
     align-items: center;
@@ -48,9 +48,9 @@ export const BtnWrapper = styled.div`
     max-height: 400px;
     max-width: 1100px;
 
-    /* @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px) {
         display: none;
-    } */
+    }
 `
 export const Button = styled.button`
     background-color: #BA55D3;
@@ -94,9 +94,9 @@ export const TabDiv = styled.div`
     max-width: 1100px;
     text-align: center;
 
-    /* @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px) {
         display: none;
-    } */
+    }
 `
 
 export const TabName = styled.div`
