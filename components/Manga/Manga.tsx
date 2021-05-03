@@ -4,15 +4,15 @@ export const ImageContainer = styled.div`
     background: #161616;
     display: flex;
     height: auto;
-    width: 100%;
     justify-content: center;
+    width: 100%;
 `
 export const Text = styled.h1`
     color: white;
     font-size:48px;
-    text-align: center;
     justify-content: center;
     position: relative;
+    text-align: center;
 
     @media screen and (max-width: 768px){
         font-size: 36px;
