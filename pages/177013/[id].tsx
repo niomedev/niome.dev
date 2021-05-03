@@ -1,11 +1,10 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link'
-import { Image, ImageContainer, ButtonContainer, Background } from '../../components/Manga/Manga'
+import { Image, ImageContainer, ButtonContainer, Background, Button } from '../../components/Manga/Manga'
 import DefaultErrorPage from 'next/error'
 import Head from 'next/head'
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { BtnWrap, Button } from '../../components/InfoSection/InfoElements';
 
 export default function Manga() {
 
@@ -55,16 +54,12 @@ export default function Manga() {
                     </Link>
                 </ImageContainer>
                 <ButtonContainer>
-                    <BtnWrap btnEnable={true}>
-                            <Link href={prevUrl} as={prevUrl} prefetch passHref>
-                                <Button>&lt; Previous</Button>
-                            </Link>
-                    </BtnWrap>
-                    <BtnWrap btnEnable={true}>
-                            <Link href={newUrl} as={newUrl} prefetch passHref>
-                                <Button>Next &gt;</Button>
-                            </Link>
-                    </BtnWrap>
+                        <Link href={prevUrl} as={prevUrl} prefetch passHref>
+                            <Button>&lt; Previous</Button>
+                        </Link>
+                        <Link href={newUrl} as={newUrl} prefetch passHref>
+                            <Button>Next &gt;</Button>
+                        </Link>
                 </ButtonContainer>
             </>
         )

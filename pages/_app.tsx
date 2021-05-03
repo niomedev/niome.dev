@@ -22,6 +22,7 @@ const GlobalReset = createGlobalStyle`
     }
     html {
       scroll-behavior: smooth;
+      overflow-x: hidden;
     }
     button{
       font-family: 'Chlakh Regular';
