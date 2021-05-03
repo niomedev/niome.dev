@@ -54,7 +54,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
 export const getStaticPaths: GetStaticPaths = async () => {
     return {
-        paths: Array.from(Array(14).keys()).map(num => ({
+        paths: Array.from(Array(15).keys()).map(num => ({
             params: { id: num.toString() }
         })),
         fallback: false
