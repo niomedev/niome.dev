@@ -9,23 +9,23 @@ type SidebarProps = {
 
 const Sidebar: FC<SidebarProps> = ({isOpen, toggle}) => {
     return (
-        <SidebarContainer isOpen={isOpen} onClick={toggle}>
+        <SidebarContainer isOpen={isOpen}>
             <Icon>
-                <CloseIcon />
+                <CloseIcon onClick={toggle}/>
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
                     <Link href="#about" passHref>
-                        <SidebarLink>About</SidebarLink>
+                        <SidebarLink onClick={toggle}>About</SidebarLink>
                     </Link>
                     <Link href="#rie-commands" passHref>
-                        <SidebarLink>Rie Commands</SidebarLink>
+                        <SidebarLink onClick={toggle}>Rie Commands</SidebarLink>
                     </Link>
                     <Link href="#manga" passHref>
-                        <SidebarLink>Rie&apos;s Manga</SidebarLink>
+                        <SidebarLink onClick={toggle}>Rie&apos;s Manga</SidebarLink>
                     </Link>
                     <Link href="#services" passHref>
-                        <SidebarLink>Services</SidebarLink>
+                        <SidebarLink onClick={toggle}>Services</SidebarLink>
                     </Link>
                 </SidebarMenu>
             </SidebarWrapper>

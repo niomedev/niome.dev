@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import HeroSection from '../components/HeroSection';
 import Navbar from '../components/Navbar'
-// import Sidebar from '../components/Sidebar'
+import Sidebar from '../components/Sidebar'
 import InfoSection from '../components/InfoSection'
 import { homeObjOne, homeObjTwo } from '../components/InfoSection/Data';
 import Services from '../components/Services';
@@ -22,7 +22,7 @@ const Index = () => {
         <title>Niome</title>
         <link rel="icon" href="/Favicon.png" />
       </Head>
-      {/* <Sidebar isOpen={isOpen} toggle={toggle} /> */}
+      <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection />
       <InfoSection {...homeObjOne}/>

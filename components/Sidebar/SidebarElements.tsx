@@ -8,7 +8,7 @@ type SidebarContainerProps = {
 export const SidebarContainer = styled.aside<SidebarContainerProps>`
     align-items: center;
     background: #0d0d0d;   
-    display: grid;
+    display: ${({ isOpen }) => (isOpen ? 'grid' : 'none')};
     height: 100%;
     left: 0;
     opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};

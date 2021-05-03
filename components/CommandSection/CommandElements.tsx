@@ -10,6 +10,7 @@ export const CommandContainer = styled.div`
 `
 
 export const CommandWrapper = styled.div`
+    align-items: center;
     display: grid;
     height: 980px;
     /* 860 */
@@ -33,14 +34,9 @@ export const TabsDiv = styled.div`
     max-height: 800px;
     max-width: 1200px;
     padding: 20px;
-    width: 1200px;
 
     @media screen and (max-width: 768px) {
-        max-width: 700px;
-    }
-
-    @media screen and (max-width: 480px) {
-        max-width: 300px;
+        display: none;
     }
 `
 export const BtnWrapper = styled.div`
@@ -51,14 +47,9 @@ export const BtnWrapper = styled.div`
     margin-bottom: 10px;
     max-height: 400px;
     max-width: 1100px;
-    width: 1100px;
-    
-    @media screen and (max-width: 768px) {
-        max-width: 600px;
-    }
 
-    @media screen and (max-width: 480px) {
-        max-width: 300px;
+    @media screen and (max-width: 768px) {
+        display: none;
     }
 `
 export const Button = styled.button`
@@ -73,10 +64,6 @@ export const Button = styled.button`
     padding: 10px;
     text-align: center;
     transition: all 0.5s;
-
-    @media screen and (max-width: 480px) {
-        font-size: 16px;
-    }
 
     &:hover{
         background-color: #481355;
@@ -106,14 +93,9 @@ export const TabDiv = styled.div`
     max-height: 800px;
     max-width: 1100px;
     text-align: center;
-    width:inherit;
 
     @media screen and (max-width: 768px) {
-        max-width: 600px;
-    }
-
-    @media screen and (max-width: 480px) {
-        max-width: 300px;
+        display: none;
     }
 `
 
