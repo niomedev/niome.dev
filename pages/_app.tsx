@@ -16,13 +16,13 @@ const GlobalReset = createGlobalStyle`
     }
     ::-webkit-scrollbar {
       display: none;
-      overflow-x: hidden;
     }
     div{
       white-space: pre-wrap;
     }
     html {
       scroll-behavior: smooth;
+      overflow-x: hidden;
     }
     button{
       font-family: 'Chlakh Regular';
