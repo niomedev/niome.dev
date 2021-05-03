@@ -12,7 +12,6 @@ const GlobalReset = createGlobalStyle`
     body {
       margin: 0;
       font-family: 'Chlakh Regular';
-      overflow-x: hidden;
     }
     ::-webkit-scrollbar {
       display: none;
@@ -22,7 +21,6 @@ const GlobalReset = createGlobalStyle`
     }
     html {
       scroll-behavior: smooth;
-      overflow-x: hidden;
     }
     button{
       font-family: 'Chlakh Regular';
