@@ -12,11 +12,12 @@ export const SidebarContainer = styled.aside<SidebarContainerProps>`
     height: 100%;
     left: 0;
     opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
-    position: fixed;
     top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
+    position: fixed;
     top: 0;
     transition: 0.3s ease-in-out;
     width: 100%;
+    max-width: 100%;
     z-index: 999;
 `;
 
@@ -61,6 +62,7 @@ export const SidebarMenu = styled.ul`
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 80px);
     text-align: center;
+    padding: inherit;
 
     @media screen and (max-width: 480px){
         grid-template-rows: (6, 60px);
