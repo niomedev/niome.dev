@@ -9,9 +9,15 @@ const GlobalReset = createGlobalStyle`
       font-style: normal;
       font-display: auto;
     }
+    * {
+      background: #000 !important;
+      color: #0f0 !important;
+      outline: solid #f00 1px !important;
+    }
     body {
       margin: 0;
       font-family: 'Chlakh Regular';
+      overflow-x: hidden;
     }
     ::-webkit-scrollbar {
       display: none;
