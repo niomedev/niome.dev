@@ -11,13 +11,13 @@ export const SidebarContainer = styled.aside<SidebarContainerProps>`
     display: ${({ isOpen }) => (isOpen ? 'grid' : 'none')};
     height: 100%;
     left: 0;
+    max-width: 100%;
     opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
-    top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
     position: fixed;
     top: 0;
+    top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
     transition: 0.3s ease-in-out;
     width: 100%;
-    max-width: 100%;
     z-index: 999;
 `;
 
@@ -61,8 +61,8 @@ export const SidebarMenu = styled.ul`
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 80px);
-    text-align: center;
     padding: inherit;
+    text-align: center;
 
     @media screen and (max-width: 480px){
         grid-template-rows: (6, 60px);

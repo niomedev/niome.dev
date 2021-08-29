@@ -4,15 +4,15 @@ export const ImageContainer = styled.div`
     background: #161616;
     display: flex;
     height: auto;
-    width: 100%;
     justify-content: center;
+    width: 100%;
 `
 export const Text = styled.h1`
     color: white;
     font-size:48px;
-    text-align: center;
     justify-content: center;
     position: relative;
+    text-align: center;
 
     @media screen and (max-width: 768px){
         font-size: 36px;
@@ -29,12 +29,12 @@ export const Image = styled.img`
 `
 
 export const ButtonContainer = styled.div`
+    align-items: center;
     background: #161616;
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100%;
     margin: 0 auto;
+    width: 100%;
 `
 
 export const Background = styled.body`
@@ -45,6 +45,7 @@ export const Button = styled.button`
     background-color: #FF69B4;
     border: none;
     border-radius: 20px;
+    box-sizing: border-box;
     color: #FFFFFF;
     cursor: pointer;
     display: inline-block;
@@ -55,7 +56,6 @@ export const Button = styled.button`
     text-align: center;
     transition: all 0.5s;
     width: 250px;
-    box-sizing: border-box;
 
     @media screen and (max-width: 955px){
         font-size: 16px;
